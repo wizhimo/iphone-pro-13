@@ -51,6 +51,7 @@ ul li a {
 .content .text h2 {
     font-size: 40px;
     text-transform: uppercase;
+    color: red;
 }
 
 .content .text p {
