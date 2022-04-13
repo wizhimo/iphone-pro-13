@@ -19,20 +19,76 @@ header {
     width: 80%;
     margin: auto;
     padding: 20px 0;
+    position: relative;
 }
 
 .logo {
     width: 40px;
 }
 
+ul {
+    transition: 0.5s;
+    position: absolute;
+    right: 0;
+}
+
 ul li {
     display: inline-block;
+    transition: 0.5s;
 }
 
 ul li a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
+}
+
+ul li a:hover {
+    color: rgb(186, 186, 186);
+}
+
+ul li:hover {
+    transform: scale(1.2);
+}
+
+.menuDrop {
+    transform: translateY(0);
+}
+
+.mobileMenu {
+    cursor: pointer;
+}
+
+.mobileMenu div {
+    height: 3px;
+    width: 20px;
+    background-color: #fff;
+    margin-top: 3px;
+    border-radius: 20px;
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .mobileMenu div {
+        display: block;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 23px;
+        top: 35px;
+        transform: translateX(300px);
+        background-color: rgba(0, 0, 0, 0.534);
+        color: #fff;
+        padding: 10px;
+        border: 2px solid #fff;
+    }
+    ul li {
+        margin: 5px 0;
+    }
 }
 
 .content {
@@ -67,6 +123,14 @@ ul li a {
     color: #000;
 }
 
+.content .text a:hover {
+    text-decoration: none;
+    background: rgb(94, 93, 93);
+    padding: 6px 15px;
+    border-radius: 20px;
+    color: #fff;
+}
+
 .content .image {
     width: 30%;
     display: flex;
@@ -92,4 +156,34 @@ ul li a {
 
 .icons img:hover {
     transform: scale(1.2);
+}
+
+@media screen and (max-width:550px) {
+    .content .text h2 {
+        font-size: 35px;
+    }
+    .content .text p {
+        font-size: 15px;
+    }
+    .content .image img {
+        width: 150px;
+    }
+    .icons img {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .content .text h2 {
+        font-size: 30px;
+    }
+    .content .text p {
+        font-size: 14px;
+    }
+    .content .text a {
+        font-size: 10px;
+    }
+    .icons img {
+        width: 30px;
+    }
 }
