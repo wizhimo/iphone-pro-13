@@ -59,13 +59,32 @@ ul li:hover {
     cursor: pointer;
 }
 
-.mobileMenu div {
+.row1,
+.row2,
+.row3 {
     height: 3px;
     width: 20px;
     background-color: #fff;
     margin-top: 3px;
     border-radius: 20px;
     display: none;
+    transition: 0.8s;
+}
+
+.row1After {
+    transform: rotate(45deg) translateY(3.5px) translateX(4.5px);
+    width: 20px;
+    background-color: rgb(197, 0, 0);
+}
+
+.row2After {
+    display: none !important;
+}
+
+.row3After {
+    transform: rotate(133deg);
+    width: 20px;
+    background-color: rgb(197, 8, 8);
 }
 
 @media screen and (max-width:600px) {
@@ -78,8 +97,8 @@ ul li:hover {
         justify-content: center;
         align-items: center;
         position: absolute;
-        right: 23px;
-        top: 35px;
+        right: -5px;
+        top: 32px;
         transform: translateX(300px);
         background-color: rgba(0, 0, 0, 0.534);
         color: #fff;
