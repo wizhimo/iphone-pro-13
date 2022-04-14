@@ -103,7 +103,7 @@ ul li:hover {
         background-color: rgba(0, 0, 0, 0.534);
         color: #fff;
         padding: 10px;
-        border: 2px solid #fff;
+        border: 1px solid #fff;
     }
     ul li {
         margin: 5px 0;
