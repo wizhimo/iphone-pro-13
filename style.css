@@ -204,3 +204,10 @@ ul li:hover {
         width: 30px;
     }
 }
+
+
+/* Product Page Style */
+
+.productsContent h1 {
+    color: #fff;
+}
