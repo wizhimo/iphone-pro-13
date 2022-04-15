@@ -1,8 +1,8 @@
 let mainImg = document.querySelector('.mainImg');
 let container = document.querySelector('.container');
+
 let myUl = document.querySelector('.myUl');
 let mobileBurger = document.querySelector('.mobileMenu');
-
 let row1 = document.querySelector('.row1');
 let row2 = document.querySelector('.row2');
 let row3 = document.querySelector('.row3');
