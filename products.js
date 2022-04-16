@@ -48,4 +48,6 @@ products.map(product => {
     item.classList.add('item');
     itemUpper.classList.add('itemUpper');
     itemLower.classList.add('itemLower');
+
+
 })
