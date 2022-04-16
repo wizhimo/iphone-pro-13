@@ -26,12 +26,15 @@ products.map(product => {
     let itemPrice = document.createElement('span');
     let itemName = document.createElement('h3');
     let buy = document.createElement('button');
+    let itemId = document.createElement('span');
 
     // insert values to each element
     itemImg.src = product.image;
     itemPrice.innerHTML = product.price;
     itemName.innerHTML = product.name;
+    itemId.innerHTML = product.id;
     buy.innerHTML = 'Buy Now';
+
 
     // appending elements
     itemUpper.append(itemImg);
@@ -41,6 +44,7 @@ products.map(product => {
 
     item.append(itemUpper);
     item.append(itemLower);
+    item.append(itemId);
 
     items.append(item);
 
@@ -48,6 +52,16 @@ products.map(product => {
     item.classList.add('item');
     itemUpper.classList.add('itemUpper');
     itemLower.classList.add('itemLower');
+    itemId.classList.add('itemId');
 
+
+    buy.addEventListener('click', (e) => {
+        let parent = e.target.parentNode.parentNode;
+        let clickedItemId = parent.childNodes[2].innerHTML;
+        console.log(clickedItemId);
+        sessionStorage.setItem("itemId", clickedItemId);
+
+        window.open('./item.html');
+    })
 
 })
