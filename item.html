@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Iphone Pro 13</title>
 </head>
 
@@ -35,7 +36,49 @@
                 <span class="itemPrice">price</span>
             </div>
             <form action="" class="paymentForm">
-                <h2>payment form</h2>
+
+                <div class="buyerInfo">
+                    <b>BUYER INFORMATION</b>
+                    <label for="fname">Buyer First Name</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Buyer Last Name</label>
+                    <input type="text" id="lname" name="lname">
+                    <label for="fname">Buyer Email</label>
+                    <input type="text" id="email" name="email" placeholder="ex: myname@example.com">
+                </div>
+
+                <div class="buyerAddress">
+                    <b>SHIPPING ADDRESS</b>
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="address">
+                    <label for="address2">Street Address Line 2</label>
+                    <input type="text" id="address2" name="address2">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                        <label for="state">State / Province</label>
+                        <input type="text" id="state" name="state">
+                        <label for="zip">Postal / Zip Code</label>
+                        <input type="text" id="zip" name="zip">
+
+                        <HR></HR>
+
+                    </div>
+                    <div class="paymentMethod">
+                        <div class="credit">
+                            <input type="radio" id="credit" name="payment">
+                            <label for="credit">
+                                <i style="font-size:24px" class="fa">&#xf1f0;</i>
+                                <i style="font-size:24px" class="fa">&#xf1f1;</i>
+                            </label><br>
+                        </div>
+                        <div class="paypal">
+                            <input type="radio" id="paypal" name="payment">
+                            <label for="paypal"><i style="font-size:24px" class="fa">&#xf1f4;</i></label><br>
+                        </div>
+                    </div>
+                </div>
+                <input id="submitBtn" type="submit" value="Submit">
             </form>
         </div>
 
