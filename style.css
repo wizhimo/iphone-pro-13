@@ -130,21 +130,19 @@ ul li:hover {
 .content .text p {
     font-size: 18px;
     margin: 20px 0;
+    margin-bottom: 25px;
 }
 
 .content .text a {
     text-decoration: none;
     background: #fff;
-    padding: 6px 15px;
+    padding: 4px 12px;
     border-radius: 20px;
     color: #000;
 }
 
 .content .text a:hover {
-    text-decoration: none;
     background: rgb(94, 93, 93);
-    padding: 6px 15px;
-    border-radius: 20px;
     color: #fff;
 }
 
@@ -322,7 +320,7 @@ ul li:hover {
 }
 
 .itemName {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     text-transform: capitalize;
 }
@@ -334,10 +332,10 @@ ul li:hover {
 .paymentForm {
     width: 50%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.158);
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    color: #fff;
+    color: #000;
     border-radius: 20px;
     padding: 50px 20px;
 }
@@ -354,7 +352,7 @@ b {
 }
 
 .buyerInfo input {
-    width: 100%;
+    width: 98%;
     height: 25px;
     margin: 10px 0;
     outline: none;
@@ -370,7 +368,7 @@ b {
 }
 
 .buyerAddress input {
-    width: 100%;
+    width: 98%;
     height: 25px;
     margin: 10px 0;
     outline: none;
@@ -390,6 +388,12 @@ hr {
     border-radius: 50%;
 }
 
+.credit,
+.paypal {
+    display: flex;
+    align-items: center;
+}
+
 #submitBtn {
     margin-top: 10px;
     width: 120px;
@@ -405,4 +409,31 @@ hr {
 
 #submitBtn:hover {
     background-color: rgb(2, 113, 2);
+}
+
+@media screen and (max-width:900px) {
+    .itemInfo img {
+        width: 50%;
+        margin: 10px auto;
+    }
+    .itemName {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .paymentContent {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        font-size: 15px;
+    }
+    .itemInfo {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .paymentForm {
+        width: 110%;
+        padding: 15px 0;
+    }
 }
